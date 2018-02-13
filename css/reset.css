@@ -1,0 +1,53 @@
+* {
+	/* adding margin and padding doesn't change the element size */
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+blockquote,
+ol,
+ul {
+	padding: 0;
+	margin: 0;
+}
+
+main {
+	/* main is not a block in Internet Explorer*/
+	display: block; 
+}
+
+h1,
+h2,
+h3,
+h4 {
+	/* inherit font size from its parent */
+	font-size: inherit;
+}
+
+a,
+button {
+	/* inherit color from parent */
+	color: inherit;
+	transition: .3s;
+}
+
+a {
+	/* removes underline from link */
+	text-decoration: none;
+}
+
+img {
+	width: 100%;
+	/* IE explicit */
+	height: auto;
+	/* remove border from Internet Explorer */
+	border: 0;
+}

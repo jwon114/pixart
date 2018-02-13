@@ -1,3 +1,38 @@
+.title {
+	font-size: 40px;
+	margin-bottom: 20px;
+}
+
+.tabs {
+	list-style: none;
+	display: flex;
+	justify-content: flex-start;
+	margin-bottom: 20px;
+}
+
+.tab-link {
+	border: 1px solid black;
+	padding: 20px;
+}
+
+.tab-link.current {
+	background-color: lightgrey;
+}
+
+.tab-content {
+	display: none;
+}
+
+.tab-content.current {
+	display: block;
+}
+
+.tool-container {
+	display: flex;
+	justify-content: center;
+	margin: 20px 0;
+}
+
 .brush-box {
 	height: 100px;
 	width: 100px;
@@ -8,4 +43,15 @@
 	height: 20px;
 	width: 20px;
 	background-color: red;
+}
+
+.paint-area-container {
+	display: flex;
+	justify-content: center;
+}
+
+.paint-area {
+	display: flex;
+	width: 200px;
+	flex-wrap: wrap;
 }
