@@ -18,7 +18,7 @@ for (var i = 0; i <= 100; i++) {
 	$('body').append(div)
 }
 
-$('body').on('click', '.square', function(event) {
+$('body').on('mouseover', '.square', function(event) {
 	var colorInput = $('.color-input').val();
 	if (colorInput !== '') {
 		$(event.target).css('background-color', colorInput);
