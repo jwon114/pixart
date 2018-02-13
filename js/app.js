@@ -26,7 +26,6 @@ $(document).ready(function () {
 		var colorInput = $('.color-input').val();
 		if (colorInput !== '') {
 			brushType = 'color';
-			// $('.brush-box').css('background-image', 'none');
 			$('.brush-box.color').css('background-color', colorInput);
 		}
 	})
@@ -35,7 +34,6 @@ $(document).ready(function () {
 	$('.color-input').keypress(function(event) {
 		var colorInput = $('.color-input').val();
 		if (event.which === 13 && colorInput !== '') {
-			// $('.brush-box').css('background-image', 'none');
 			$('.brush-box.color').css('background-color', colorInput);
 		}
 	})
