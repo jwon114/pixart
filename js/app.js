@@ -17,3 +17,7 @@ for (var i = 0; i <= 100; i++) {
 	var div = "<div class='square'></div>"
 	$('body').append(div)
 }
+
+$('body').on('click', '.square', function(event) {
+	$(event.target).css('background-color', 'green');
+})
