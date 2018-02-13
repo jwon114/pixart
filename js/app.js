@@ -5,7 +5,6 @@ $(document).ready(function () {
 	// tab to switch between brushes
 	$('.tabs .tab-link').on('click', function() {
 		var tabId = $(this).attr('data-tab');
-		console.log(tabId);
 		$('.tabs .tab-link').removeClass('current');
 		$('.tab-content').removeClass('current');
 
