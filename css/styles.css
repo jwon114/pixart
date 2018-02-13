@@ -3,3 +3,9 @@
 	width: 100px;
 	background-color: blue;
 }
+
+.square {
+	height: 20px;
+	width: 20px;
+	background-color: red;
+}

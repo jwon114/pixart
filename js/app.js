@@ -12,3 +12,8 @@ $('.color-input').keypress(function(event) {
 		$('.brush-box').css('background-color', colorInput);
 	}
 })
+
+for (var i = 0; i <= 100; i++) {
+	var div = "<div class='square'></div>"
+	$('body').append(div)
+}
