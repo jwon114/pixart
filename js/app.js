@@ -19,5 +19,8 @@ for (var i = 0; i <= 100; i++) {
 }
 
 $('body').on('click', '.square', function(event) {
-	$(event.target).css('background-color', 'green');
+	var colorInput = $('.color-input').val();
+	if (colorInput !== '') {
+		$(event.target).css('background-color', colorInput);
+	}
 })
