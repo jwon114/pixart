@@ -26,8 +26,8 @@ $(document).ready(function () {
 		var colorInput = $('.color-input').val();
 		if (colorInput !== '') {
 			brushType = 'color';
-			$('.brush-box').css('background-image', 'none');
-			$('.brush-box').css('background-color', colorInput);
+			// $('.brush-box').css('background-image', 'none');
+			$('.brush-box.color').css('background-color', colorInput);
 		}
 	})
 
@@ -35,8 +35,8 @@ $(document).ready(function () {
 	$('.color-input').keypress(function(event) {
 		var colorInput = $('.color-input').val();
 		if (event.which === 13 && colorInput !== '') {
-			$('.brush-box').css('background-image', 'none');
-			$('.brush-box').css('background-color', colorInput);
+			// $('.brush-box').css('background-image', 'none');
+			$('.brush-box.color').css('background-color', colorInput);
 		}
 	})
 
@@ -48,7 +48,7 @@ $(document).ready(function () {
 
 	// mouseover event to change background-color
 	$('body').on('mouseover', '.square', function(event) {
-		var brushColor = $('.brush-box').css('background-color');
+		var brushColor = $('.brush-box.color').css('background-color');
 		var brushImage = $('.brush-box.movie').css('background-image');
 		
 		if (brushType === 'color' && brushColor !== '') {
